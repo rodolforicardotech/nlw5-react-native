@@ -80,6 +80,22 @@ arquivo custom.d.ts -> para agilizar as imagens que estarão na página
 
 
 
+Com um componente eu posso reaproveitar os atributos e propriedades várias vezes.
+
+Ele deu um exemplo de reaproveitamento de botão. Adicionou somente a propriedade title para alterar o texto do botão.
+
+
+
+É possóvel extender as propriedades.
+
+
+
+
+
+
+
+
+
 
 
 
