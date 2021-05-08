@@ -86,19 +86,22 @@ Ele deu um exemplo de reaproveitamento de botão. Adicionou somente a propriedad
 
 
 
-É possóvel extender as propriedades.
+É possível extender as propriedades.
 
 
 
 
 
+OBS: Para você ver a tela que está sendo trabalhada, vá no app e substitua a tela linkada pela tela que você quer ver. Ex: import { página } from ENDEREÇO DA PÁGINA
 
 
 
+OBS: Tenha sempre um container no StyleSheet.
 
 
 
+OBS: Abrir os emojis no mac: CTRL + COMMAND + BARRA DE ESPAÇO
 
 
 
-
+OBS: Instalar o React Navigation
