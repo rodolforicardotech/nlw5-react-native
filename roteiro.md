@@ -105,3 +105,22 @@ OBS: Abrir os emojis no mac: CTRL + COMMAND + BARRA DE ESPAÇO
 
 
 OBS: Instalar o React Navigation
+
+
+
+OBS: Instalar o React Navigation (ele lida com a navegação em si)
+
+OBS: instalar as dependências para o expo (toques, navegação, telas e outras coisas)
+
+OBS: instalar também o react navigation stack ( a pilha de navegação do app)
+
+
+
+OBS: Atenção !!!! INSTALAR TUDO NA PASTA DO PROJETO
+
+OBS: <TouchableWithoutFeedback> Para clicar em qualquer lugar da tela para que o teclado suma.
+
+
+
+Análises heurísticas -> dez mandamentos da usabilidade
+

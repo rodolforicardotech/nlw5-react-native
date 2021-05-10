@@ -6,12 +6,16 @@ import {
     Text,
     TextInput,
     KeyboardAvoidingView, 
-    Platform
+    TouchableWithoutFeedback,
+    Platform,
+    Keyboard
+
 } from 'react-native';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 
 import {Button} from '../components/Button';
+import { useNavigation } from '@react-navigation/core';
 
 export function UserIdentification() {
     const [isFocused, setIsFocused] = useState(false);
@@ -32,12 +36,19 @@ export function UserIdentification() {
 
     }
 
+    const navigation = useNavigation();
+    
+    function handleSubmit() {
+        navigation.navigate('Confirmation');
+    }
+
     return (
         <SafeAreaView style={styles.container}>
             <KeyboardAvoidingView style={styles.container}
             behavior = {Platform.OS === 'ios' ? 'padding' : 'height'}
             >
-
+            <TouchableWithoutFeedback
+            onPress={Keyboard.dismiss}>
             <View style={styles.content}>
                 <View style={styles.form}>
                     <View style={styles.header}>
@@ -60,11 +71,14 @@ export function UserIdentification() {
                     onChangeText={handleInputChange}
                     />
                     <View style={styles.footer}>
-                        < Button  />
+                        < Button  
+                        title='Confirmar'
+                        onPress={handleSubmit}/>
                     </View>
                     
                 </View>
             </View>
+            </TouchableWithoutFeedback>
             </KeyboardAvoidingView>
         </SafeAreaView>
     )
